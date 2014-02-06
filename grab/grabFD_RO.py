@@ -41,8 +41,9 @@ def cat(id):
 			dam_a = damTable.a
 			if dam_a and dam_a.has_attr('href'):
 				dam_id = linkP.match(dam_a['href']).group(1)
-	print id + ", " + gender + ", " + katnavn_master + ", " + ems_master + ", " + foedt_master + ", " + stambogsnr_master + ", " + sire_id + ", " + dam_id
-	return (id, gender, katnavn_master, ems_master, foedt_master, stambogsnr_master, sire_id, dam_id)
+		print id + ", " + gender + ", " + katnavn_master + ", " + ems_master + ", " + foedt_master + ", " + stambogsnr_master + ", " + sire_id + ", " + dam_id
+	print id
+	#return (id, gender, katnavn_master, ems_master, foedt_master, stambogsnr_master, sire_id, dam_id)
 
 start = raw_input("Enter cat id interval start: ")
 stop = raw_input("Enter cat id interval stop: ")
@@ -52,14 +53,14 @@ stop = int(stop)
 #stop = 9999
 
 start_time = time.time()
-with open("cats_{0}-{1}.csv".format(start,stop-1),'w') as out:
-    csv_out=csv.writer(out)
+#with open("cats_{0}-{1}.csv".format(start,stop-1),'w') as out:
+#    csv_out=csv.writer(out)
 #    csv_out.writerow(['ID','GENDER','NAME','EMS','DOB','REG','SIRE','DAM'])
-    for a in range(start, stop):
-	    row = cat(str(a))
-	    row = [s.encode('utf-8') for s in row]
-	    csv_out.writerow(row)
+for a in range(start, stop):
+	cat(str(a))
+#	    row = [s.encode('utf-8') for s in row]
+#	    csv_out.writerow(row)
 
-end_time = time.time()
-print end_time - start_time
-print (end_time-start_time)/(stop-start)
+#end_time = time.time()
+#print end_time - start_time
+#print (end_time-start_time)/(stop-start)

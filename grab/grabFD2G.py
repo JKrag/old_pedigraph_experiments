@@ -12,7 +12,7 @@ graph_db = neo4j.GraphDatabaseService("http://localhost:7474/db/data/")
 linkP = re.compile(".*=(\d*)")
 print type(linkP)
 def cat(id):
-	r  = requests.get("http://katte.ws2013.com/?gens=1&id=" + id)
+	r  = requests.get("http://katte.ws2013.com/?gens=2&id=" + id)
 	data = r.text
 	soup = BeautifulSoup(data)
 	stamtrae = soup.find("table", class_ = "stamtrae")
@@ -41,6 +41,9 @@ def cat(id):
 			dam_a = damTable.a
 			if dam_a and dam_a.has_attr('href'):
 				dam_id = linkP.match(dam_a['href']).group(1)
+
+	#			if soup.find("table", class_="kendt_hun_master"):
+#			dam_id = damTable.a.text
 	print id + ", " + gender + ", " + katnavn_master + ", " + ems_master + ", " + foedt_master + ", " + stambogsnr_master + ", " + sire_id + ", " + dam_id
 	return (id, gender, katnavn_master, ems_master, foedt_master, stambogsnr_master, sire_id, dam_id)
 
