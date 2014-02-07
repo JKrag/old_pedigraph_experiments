@@ -1,12 +1,11 @@
 <div class="jumbotron">
   <h1>Pedigraph</h1>
-    <img src="https://dl.dropboxusercontent.com/u/2965928/Handful_of_happiness.jpg" alt="Handfull of hapiness"><br>
+    <!--img src="https://dl.dropboxusercontent.com/u/2965928/Handful_of_happiness.jpg" alt="Handfull of hapiness"><br-->
     <form class="form-inline" role="form">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
-        <input type="text" ng-model="search" class="form-control" id="search" placeholder="Wha'ever">
+        <input type="text" ng-model="search" class="form-control" id="search" placeholder="Cat id" ng-change="doSearch()">
       </div>
-      <button ng-click="doSearch()" class="btn btn-lg btn-success">Search</button>
     </form>
     <table class="table">
       <tr ng-repeat="cat in cats">
