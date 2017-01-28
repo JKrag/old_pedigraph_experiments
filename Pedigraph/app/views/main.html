@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h1>Pedigraph</h1>
-    <!--img src="https://dl.dropboxusercontent.com/u/2965928/Handful_of_happiness.jpg" alt="Handfull of hapiness"><br-->
+    <img src="https://dl.dropboxusercontent.com/u/2965928/Handful_of_happiness.jpg" alt="Handfull of hapiness"><br>
     <form class="form-inline" role="form">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
@@ -8,8 +8,11 @@
       </div>
     </form>
     <table class="table">
+      <tr>
+        <th>♀/♂</th><th>Cat</th><th>Sire</th><th>Dam</th>
+      </tr>
       <tr ng-repeat="cat in cats">
-        <td>{{cat[0].data.id}}</td><td>{{cat[0].data.gender}}</td><td>{{cat[1].data.id}}</td>
+        <td>{{cat[0].data.gender}}</td><td>{{cat[0].data.id}}</td><td>{{cat[1].data.id}}</td><td>{{cat[2].data.id}}</td>
       </tr>
     </table>
 </div>
