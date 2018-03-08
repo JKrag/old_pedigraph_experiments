@@ -1,0 +1,99 @@
+128848;M;Usaf's Jumpin' Jehosaphat of Squire;SIN;04-04-1988;GCCF CSEXP 512185;130513;130514
+128849;F;Sayang's Cattleya of Catera;SIN;23-09-1997;CFA 2701-1158063 V0799;;
+128850;M;Catera American Dream-of-Portia;SIN;04-06-1999;GCCF CSEXP 457382;128848;128849
+129458;M;Short Stuff of Golden Medley;SIN;...;CFA 2700-1118656;;
+129459;F;Golden Medley Butter Three;SIN;...;TICA SBT 022794 004;;
+129460;M;Golden Medley Boris Karloff;SIN;...;CFA 2700-1307338;129458;129459
+129461;M;Jubilation Elf;SIN;...;CFA 2700-1160741;;
+129462;F;Minnsing Cherokee;SIN;...;CFA 2701-878698;;
+129463;F;Jubilation Elan;SIN;...;CFA 2701-1256103;129461;129462
+129464;M;Shiverdens Bo Jangles;SIN;18-06-2003;GCCF CSSR 566688;129460;129463
+129465;M;Dynastithai Singpur Soiaskder;SIN;...;GCCF CSREF 360148;;
+129466;F;Singingpurrs Shamonix;SIN;...;GCCF CSREF 323305;;
+129467;F;Tolgoblin Esmirelda Ofmine;SIN;...;GCCF CSREF 243129;;
+129468;M;Singingpurrs Elvispursley;SIN;...;GCCF CSREF 368637;129465;129467
+129469;F;Portia Sheenas Apunkrocker;SIN;...;GCCF CSREF 371974;129465;129466
+129470;F;Iskander Sentosa;SIN;...;GCCF CSREF 349630;;
+129471;F;Mysyameez Purrtulapursley;SIN;...;GCCF CSEXP 420753;129468;129470
+129472;F;Adquash Sepia Rosie;SIN;...;GCCF CSREF 322847;130516;130515
+129473;F;Adentsh Daisy Pawshe;SIN;...;GCCF CSEXP 390180;129465;129472
+129474;F;Tolgoblin Tintinella;SIN;...;GCCF CSREF 304475;;
+129475;M;Portia Wysiwyg;SIN;...;GCCF CSEXP 505805;128850;129469
+129476;F;Mysyameez Purrdypursley;SIN;...;GCCF CSEXP 469982;129468;129471
+129477;M;Adfursh Christofur Brown;SIN;...;GCCF CSSR 587336;129475;129476
+129478;M;Sricoberys Indah;SIN;...;GCCF CSREF 237076;;
+129479;M;Iskander Tompok;SIN;...;GCCF CSREF 370488;129478;129474
+129480;F;Namasaya Yang Pertama;SIN;...;GCCF CSEXP 463287;129479;129473
+129481;F;Jinnomni Bopeepers;SIN;...;GCCF CSSR 593496;129464;129480
+129482;F;Spookipawz Mis Sophia;SIN;20-05-2005;FD RX 139192;129477;129481
+130512;F;Jinnomni Bochiko;SIN;...;GCCF CSSR 593495;129464;129480
+130513;M;Sayang Sadie's Maverick;SIN;30-03-1996;CFA 2700-1082620 V0198;;
+130514;F;Sayang The Fairy Pest;SIN;21-03-1997;CFA 2701-1127983 V0598;;
+130515;F;Tolgoblin Winter Jasmin;SIN;...;GCCF CSREF 243128;;
+130516;M;Changis Singing Purrs Theo;SIN;...;GCCF CSREF 297481;;
+130693;F;Sayang Singapore Tinkerbell;SIN;...;CFA 2701-1025841 V1096;;
+130694;M;Sayang Manis Pusat Kuching, DM;SIN;...;CFA 2700-846906 V0795;;
+130695;M;Sayang Goldenrod of Singingpurrs;SIN;21-03-1997;GCCF CSEXP 410674;130694;130693
+130696;M;Nuance Mara's Nuance Jackson;SIN;...;GCCF CSEXP 412344;;
+130697;F;Dynastithai Sirikit of Singpur;SIN;...;GCCF CSREF 361391;;
+130698;F;Singingpurrs Secrets Agent;SIN;...;GCCF CSEXP 444514;130696;130697
+130699;M;Singingpurrs Ixand;SIN;...;GCCF CSEXP 512404;128848;130698
+130700;F;Pawra Missmufest;SIN;...;GCCF CSEXP 443917;130695;129472
+130701;M;Liliphar Dreamboat;SIN;...;GCCF CSSR 553653;130699;130700
+130717;M;Jinnomni Hetherhil Charmer;SIN;02-12-2005;FD RX 139919;130701;130512
+139071;M;DK Abéné's First Edition;SIN;20-01-2007;FD RX 145674;130717;129482
+139072;F;DK Abéné's Face of an Angel;SIN;20-01-2007;FD RX 145675;130717;129482
+139073;F;DK Abéné's Felicia;SIN;20-01-2007;FD RX 145676;130717;129482
+183417;M;USAF's Jumpin' Jehosaphat of Squire;SIN;...;CFA 2700-1225924;;
+183419;M;Catera's Gnome III;SIN;...;CFA 2700-1264127 V0101;183417;128849
+183420;M;Sayang Alexander the Great of L'Etoile Sol;SIN;...;CFA 2700-972045;;
+183421;F;USAF's Muka Kuku of L'Etoile Sol;SIN;...;CFA 2701-863299;;
+183422;M;Jademountain S'pore Gnome of Sayang;SIN;...;CFA 2700-629421 V0591;183427;183428
+183423;F;Alor Star's Demi-Taz;SIN;...;CFA 2701-1027567 V0598;130694;183445
+183424;F;Alor Star's Allie Mae;SIN;...;CFA 2701-1198250 V0501;183422;183423
+183426;M;Alor Star's Skidder;SIN;...;CFA 2700-1514986 V0105;183419;183424
+183427;M;USAF'S Muka Saya of Jademountain;SIN;...;CFA 2700-478786 V0789;;
+183428;F;Donte's Little Pebbles of Jademountain;SIN;...;CFA 2701-200487 V0589;;
+183431;M;Alor Star's Radar of Jouet-Couguar;SIN;11-06-2004;CFA 2700-1515014;183426;183424
+183432;F;Dynastithal Nefertari;SIN;...;CFA 2701-1227731;;
+183433;M;Dynastithai Frenchi of Flicflac of Wendenb;SIN;...;CFA 2700-1355683;183417;183432
+183434;M;L'Etoile Sol's Oscar Premium;SIN;...;PK.SIN/001/98;183420;183421
+183435;F;L'Etoile Sol's Ovation Premium;SIN;...;PK.SIN/002/98;183420;183421
+183436;F;L'Etoile Sol's Lulu Premium of Jouet-Cougu;SIN;...;PK.SIN/005/01;183434;183435
+183437;M;Chono of Tropical Heat;SIN;...;BKKV 023-1296;;
+183438;F;Dynastithal Mille Et Une Nuit;SIN;...;ANCFF 970170;;
+183439;F;Pearls of Singa's Imari of Wendenburg;SIN;...;AICC 04005283;183437;183438
+183440;M;Wendenburg's Lee-Chu of Jouet-Couguar;SIN;...;(D)Zb.Nr.01042547;183433;183439
+183441;F;Agness Jouet-Couguar;SIN;23-01-2005;PK.SIN/008/05;183440;183436
+183442;M;Kennaz Sunna of Katzenhof;SIN;20-04-2008;(DK)FD RX 209109;183431;183441
+183445;F;Alor Star's Tarantella;SIN;...;CFA 2701-856379 V1295;;
+213275;M;Purrpill Kuan's Fairy Best;SIN;...;Missing Info (742);;
+213276;F;Usaf's Kiss A Pest;SIN;...;Missing Info (743);;
+213277;M;Felinexpress Ti Nung Chat;SIN;...;Missing Info (744);;
+213278;F;Moulincrecy Nang Thai;SIN;...;Missing Info (745);;
+213279;M;Usaf's Monterey;SIN;...;CFA 2700-1426793;213275;213276
+213280;F;Felinexpress Thailyn;SIN;...;CFA 2701-1611281;213277;213278
+213281;M;Sentosa's Tengku Mahkota;SIN;...;CFA 2700-1629231;213282;213283
+213282;M;Catera's Shison Yoshihito;SIN;...;CFA 1700-1443889 V0805;;
+213283;F;Catera's Lacey;SIN;...;CFA 2701-1516767 V1106;;
+213284;F;Singsing Purrly Girly;SIN;...;CFA 2701-1515587;;
+213285;M;Spookipaws Billy;SIN;...;CFA 2700-01563131;;
+213286;F;Mikka Makka's Sushi;SIN;...;Missing Info (746);;
+213287;M;Kucinta Bruno H;SIN;...;Missing Info (747);;
+213288;F;Elizia Lee Pearls;SIN;...;Missing Info (748);;
+213289;M;Moontan's Mystic Dreamer;SIN;...;Missing Info (749);;
+213290;F;Dynastithai Mahal Lian;SIN;...;Missing Info (750);;
+213291;M;Sayang Kuching Buni Smooch;SIN;...;CFA 2700-1041452;;
+213292;F;Dynastithai First Fleur;SIN;...;(FR)ANCFF K.970049;;
+213293;M;Felinexpress Rocky;SIN;...;CFA 2700-1692788;213279;213280
+213294;F;Sensations Sukurah;SIN;...;CFG 2701-12060902353;213287;213288
+213295;M;RO*Elian Sings Street;SIN;...;(RO)FELIS RX 2009-1026/SIN;213281;213286
+213296;F;Minime Makia Tinkerbell;SIN;...;ACU-SG 112010 009;213295;213294
+213297;M;Threelights Im So Cute;SIN;...;(CH)LOS 13-34295;213293;213296
+213298;F;Beautymus Little Miss Sunshine;SIN;...;CFA 2701-1662334;213285;213284
+213299;M;Mireille Maverick;SIN;...;(RO)FELIS LO 2011-1835/SIN-NON;213281;213298
+213300;M;Dynastithai Sanga Solo;SIN;...;LOOF 2001.1855;213289;213290
+213301;F;Dynastithai Acerola;SIN;...;LOOF 2005.16295;213291;213292
+213302;F;Decibelle du Douronron;SIN;...;(CH)LOS 08-26849;213300;213301
+213303;F;Dancetaria Bailey's;SIN;...;(CH)LOS 14-34954;213299;213302
+213304;M;Dancetaria Muffin for Kustens;SIN;27-06-2016;(DK)FD LO 226387;213297;213303
