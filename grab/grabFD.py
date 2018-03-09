@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+
+# Usage example:
+# python grabFD.py
+
 from bs4 import BeautifulSoup
 
 import requests
@@ -6,11 +10,8 @@ import re
 import csv
 import time
 import codecs
-#from py2neo import neo4j
-#graph_db = neo4j.GraphDatabaseService("http://localhost:7474/db/data/")
 
 linkP = re.compile(".*=(\d*)")
-#print type(linkP)
 
 def cat_found(soup):
 	return soup.find("table", class_="kendt_han_master") or soup.find("table", class_="kendt_hun_master")
@@ -25,18 +26,20 @@ def get_gender(soup):
 
 def cat(cat_id):
 	id = str(a)
+	data = ""
 	try:
- 		r  = requests.get("http://katte.felisdanica.dk/?gens=1&id=" + id, timeout=10)
+		r  = requests.get("http://katte.felisdanica.dk/?gens=1&id=" + id, timeout=10)
+		data = r.text
 	except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout) as e:    
- 		print e
- 		print "#### Retrying " + id + " once"
- 		try:
- 			r  = requests.get("http://katte.felisdanica.dk/?gens=1&id=" + id, timeout=20)
- 		except Exception as e:
+		print e
+		print "#### Retrying " + id + " once"
+		try:
+			r  = requests.get("http://katte.felisdanica.dk/?gens=1&id=" + id, timeout=30)
+			data = r.text
+		except Exception as e:
 			print "#### Failed: " + id + " ########################"
-	data = r.text
+
 	soup = BeautifulSoup(data, "html.parser")
-	#stamchild = stamtrae.tr
 
 	if cat_found(soup):
 		#print "Content found for id: "+id
@@ -67,18 +70,17 @@ start = raw_input("Enter cat id interval start: ")
 stop = raw_input("Enter cat id interval stop: ")
 start = int(start)
 stop = int(stop)
-#start = 1000
-#stop = 9999
 
 start_time = time.time()
+
 with open("cats_{0}-{1}.csv".format(start,stop-1),'w') as out:
-    csv_out=csv.writer(out, delimiter='|')
-#    csv_out.writerow(['ID','GENDER','NAME','EMS','DOB','REG','SIRE','DAM'])
-    for a in range(start, stop):
-	    row = cat(a)
-	    if row:
-	    	row = [s.encode('utf-8') for s in row]
-	    	csv_out.writerow(row)
+	csv_out=csv.writer(out, delimiter='|')
+	# csv_out.writerow(['ID','GENDER','NAME','EMS','DOB','REG','SIRE','DAM'])
+	for a in range(start, stop):
+		row = cat(a)
+		if row:
+			row = [s.encode('utf-8') for s in row]
+			csv_out.writerow(row)
 
 end_time = time.time()
 print end_time - start_time

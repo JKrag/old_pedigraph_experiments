@@ -30,9 +30,9 @@ with open(path,'rb') as catfile:
     for row in cats:
         id = int(row[0])
         found.add(id)
-        mylast = id
-        myfirst = myfirst or id  #shortcut verison of "if not first: myfirst = id"
 
+myfirst = min(found)
+mylast = max(found)
 print "records found:" + str(len(found))
 print "records expected:" + str(mylast-myfirst+1)
 print "myfirst:" + str(myfirst)
