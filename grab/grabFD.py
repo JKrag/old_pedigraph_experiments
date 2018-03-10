@@ -16,7 +16,7 @@ stop = int(stop)
 
 start_time = time.time()
 
-with open("cats_{0}-{1}.csv".format(start,stop-1),'w') as out:
+with open("cats_{0:06d}-{1:06d}.csv".format(start,stop-1),'w') as out:
 	csv_out=csv.writer(out, delimiter='|')
 	# csv_out.writerow(['ID','GENDER','NAME','EMS','DOB','REG','SIRE','DAM'])
 	for a in range(start, stop):
