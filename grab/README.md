@@ -1,7 +1,7 @@
 # Grabbing
 
 ## Initial brute grab
-Create a folder for new data e.g. 
+Create a folder for new data e.g.
 ```
 mkdir 2018-03
 cd 2018-03
@@ -18,6 +18,10 @@ In case of timeouts, the scripts tries each cat once more, then skips it.
 
 Each interval will write a `cats_[start]_[end].csv` file.
 
+#NOTE:
+#  Start in inclusive
+#  End is exclusive
+
 When done, the files can be cat'ed together into bigger chunks and finally one big `all.csv` or the likes.
 
 ## Find missing
@@ -29,10 +33,10 @@ python ../find_missing.py all_2018-03.csv > missing.txt
 
 This will create a `missing.txt` that contains all the numbers of skipped cats.
 
-*NOTE:* Open the file and edit out the header and footer statistics info 
+*NOTE:* Open the file and edit out the header and footer statistics info
 (TODO: clean up script so it writes output directly to file and stats to std.out.)
 
-Run: 
+Run:
 ```
 python ../grab_missing.py
 ```
@@ -42,6 +46,8 @@ This will run through all cats in missing.txt and try to grab them again, writin
 Use `wc -l` to check if it found all, otherwise concat the new cats at the end of all.csv, and repeat the find missing procedure until satisfied. Note that there could be cats simply not in the DB, so check on `http://katte.felisdanica.dk/?id=[ID]` if there are a few that keep failing.
 
 In 2018-03 I had 1411 cat id's that were not there at all.
+
+In 2019-03: grab_missing recovered 392 cats on first run, and no more on second run. Number of missing cats: 1570
 
 ## Cleanup
 If missing have been concated on to the end, sorting might be a good idea.
@@ -53,4 +59,9 @@ or doing the `SELECT ... FROM all.csv missing.csv` should work fine as well?
 It might also be a good idea to do a dos2unix convertion at some point.
 
 
- 
+
+## Finding problems
+2019-02: I did a BeyondCompare of cats_all.csv and sorted.csv. BC is CSV aware and can be configured to understand pipe-delimeter etc.
+This turned up some unexpected results as there were 3 cats that had CRLF in the file names (and other weird duplications). I cleaned these up by hand and wrote a andre_fejl.txt with them.
+
+After cleanup and sorting, I did a dos2unix on the unsorted file, and checked that the byte-size was exactly the same as the sorted one. This gives some comfort.
