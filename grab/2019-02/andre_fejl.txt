@@ -1,0 +1,21 @@
+http://katte.felisdanica.dk/?id=221921
+Kat står i DB som:
+"(N)RGJ Cat's
+(N)RGJ Cat's Ozornik"
+
+Dvs. med newline i filnavn, så måske mangler der en anden kat?
+
+------
+
+http://katte.felisdanica.dk/?id=162010
+
+Kat står i DB som:
+"DK O'Donnell
+Mira  "
+
+-------
+http://katte.felisdanica.dk/?id=194650
+
+Står i DB som:
+"DK Pigalop's Créme Fraîche
+che "

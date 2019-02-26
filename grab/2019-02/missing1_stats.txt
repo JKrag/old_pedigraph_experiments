@@ -1,0 +1,6 @@
+records found:224460
+records expected:226422
+myfirst:1
+mylast:226422
+number of missing cats: 1962
+0.512027978897
